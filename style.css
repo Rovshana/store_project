@@ -1,0 +1,153 @@
+/* font-family: 'Lato', sans-serif; */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif
+
+}
+nav{
+background-color: #111;
+color: white;
+padding: 20px 5px;
+}
+
+.sneakers{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    background-color: lightgray;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+#searchInput{
+    color: gray;
+    border: none;
+    background-color: transparent;
+}
+.limitedOffer{
+    border-bottom: 2px solid green;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBottom li{
+    list-style: none;
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgrey;
+    font-weight: 500;
+    font-size: 20px;
+}
+/* slider css */
+
+.slider{
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 66%); */
+} 
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+}
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+}
+.sliderBg{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 50px;;
+
+
+}
+.sliderImg{
+    z-index: 1;
+}
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    color: white;
+    right: 28%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+ 
+}
+
+.sliderPrice{
+    position: absolute;
+    top: 10%;
+    color: white;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid green;
+
+
+}
+
+.sliderBtn{
+    border: 1px solid gray;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+    background-color: #111;
+    color: grey;
+
+}
+.sliderBtn:hover{
+    background-color: white;
+    color: black
+}
+.sliderItem:nth-child(1) .sliderBg{
+    background-color: green;
+}
+.sliderItem:nth-child(2) .sliderBg{
+    background-color: purple;
+}
+.sliderItem:nth-child(3) .sliderBg{
+    background-color: blue;
+}
+.sliderItem:nth-child(4) .sliderBg{
+    background-color: orange;
+}
+.sliderItem:nth-child(1) .sliderPrice{
+color: green;
+}
+.sliderItem:nth-child(2) .sliderPrice{
+color: purple;
+}
+.sliderItem:nth-child(3) .sliderPrice{
+color: blue;
+}
+.sliderItem:nth-child(4) .sliderPrice{
+color: orange;
+}
