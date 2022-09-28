@@ -337,3 +337,32 @@ label{
     width: 100%;
     
 }
+
+/* new season */
+.newSeason{
+    display: flex;
+
+}
+.newseasonItem{
+    flex: 1;
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.newSeasonImg{
+    width: 100%;
+    
+}
+
+.nsTitle{
+    font-size: 40px;
+}
+.nsButton{
+    cursor: pointer;
+    padding: 15px;
+    font-weight: 600;
+}
