@@ -95,13 +95,38 @@ list.forEach((item, index)=>{
     })
 })
 
-// changing product color by clicking color of product
-productColors.forEach((color, index)=>{
-    console.log(index)
-    color.addEventListener('click', (index)=>{
-        currentProductImg.src = choosenProduct.colors[index].img
-        console.log(currentProductImg)
 
+// changing product color by clicking color of product
+productColors.forEach((item, index)=>{
+    item.addEventListener('click', ()=>{
+        currentProductImg.src = choosenProduct.colors[index].img
     })
 })
 
+
+// changing product sizes 
+productSizes.forEach((size, index)=>{
+    size.addEventListener("click", ()=>{
+        productSizes.forEach((size)=>{
+            size.style.backgroundColor = "white"
+        size.style.color = "black"
+        })
+        size.style.backgroundColor = "black"
+        size.style.color = "white"
+    })
+})
+
+
+// modal
+const productBtn = document.querySelector('.productBtn');
+const close = document.querySelector(".close")
+const payment = document.querySelector(".payment");
+
+
+productBtn.addEventListener('click', ()=>{
+    payment.style.display ="flex"
+});
+
+close.addEventListener('click', ()=>{
+    payment.style.display = "none"
+})

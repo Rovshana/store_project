@@ -189,6 +189,79 @@ color: orange;
     position: relative;
     clip-path: polygon(0 23%, 99% 0, 100% 100%, 0% 100%);
 }
+
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.payTitle{
+    font-size: 20px;
+    color: gray;
+}
+label{
+    font-size: 14px;
+    font-weight: 300;
+}
+.payInput{
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.payInput::placeholder{
+    color: gray;
+}
+.cardIcons{
+    display: flex;
+
+}
+.cardIcon{
+    margin-right: 10px;
+}
+.sm{
+    width: 30%;
+
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom:-40;
+    left: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #369e62;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 3px;
+}
 .productImg{
  padding-top: 60px;
  width: 50%;
@@ -235,7 +308,7 @@ color: orange;
 
 }
 
-.buyBtn{
+.productBtn{
     padding: 10px 20px;
     float: right;
     cursor: pointer;
@@ -248,4 +321,19 @@ color: orange;
     background-color: white;
     color: black;
 
+}
+
+.gallery{
+    display: flex;
+    padding: 50px;
+}
+.galleryItem{
+    flex: 1;
+    padding: 50px;
+
+}
+
+.galleryImg{
+    width: 100%;
+    
 }

@@ -20,7 +20,7 @@
     <title>Nike</title>
   </head>
   <body>
-    <nav>
+    <nav id="navbar">
       <div class="navTop">
         <div class="navItem">
           <span class="sneakers"> .Sneakers</span>
@@ -130,8 +130,68 @@
         <div class="size">38</div>
         <div class="size">39</div>
       </div>
-      <button class="buyBtn">Buy Now</button>
+      <button class="productBtn">Buy Now</button>
     </div>
+
+    <div class="payment">
+      <h1 class="payTitle">Personal Information</h1>
+      <label>FullName</label>
+      <input type="text" placeholder="Ann Schlight" class="payInput"/>
+      <label>Phone Number</label>
+      <input type="text" placeholder="077 543 78 99" class="payInput"/>
+      <label>Address</label>
+      <input type="text" placeholder="fifth avenue" class="payInput"/>
+      <h1 class="payTitle">Card Information</h1>
+      <div class="cardIcons">
+<!-- icons will come -->
+      </div>
+      <input type="password" placeholder="card number" class="payInput"/>
+      <div class="cardInfo">
+        <input type="password" placeholder="mm" class="payInput sm"/>
+        <input type="password" placeholder="yyyy" class="payInput sm"/>
+        <input type="password" placeholder="cvv" class="payInput sm"/>
+
+      </div>
+      <button class="payButton">Checkout</button>
+      <span class="close">X</span>
+    </div>
+    
+    </div>
+    <!-- gallery -->
+    <div class="gallery">
+      <div class="galleryItem">
+        <h2 class="galleryTitle">Your Style!</h2>
+        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/16045866/2022/8/3/695e8b30-9251-44cd-a5ce-fa383906a4af1659517009108-Nike-Women-Cream-Coloured--Beige-Solid-Crater-Impact-Regular-1.jpg" class="galleryImg"/>
+
+      </div>
+      <div class="galleryItem">
+      
+        <img src="https://media1.popsugar-assets.com/files/thumbor/tCOSYhUA6DwL2SzJDWPJJxONAlo/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/06/05/843/n/1922564/4a01398e96063c0b_netimgmpLtPk/i/Nike-Air-Huarache-Sneakers.jpg" class="galleryImg"/>
+        <h2 class="galleryTitle">Your Life, your desicions!</h2>
+      </div>
+      <div class="galleryItem">
+        <h2 class="galleryTitle">Learn More!</h2>
+        <img src="https://images.asos-media.com/products/nike-air-max-90-se-sneakers-in-white-multi/201152405-1-whitemulti?$n_480w$&wid=476&fit=constrain"/>
+
+      </div>
+
+    </div>
+    <div class="new season">
+      <div class="newSeasonItem">
+        <img src="" class="newSeasonImg"/>
+      </div>
+      <div class="newSeasonItem">
+   <h3 class="nsTitle">WINTER NEW ARRIVALS</h1>
+   <h1 class="nsTitle">NEW SEASON</h1>
+   <h1 class="nsTitle">NEW COLLECTION</h1>
+   <a href="#navbar">
+    <button class="nsButton">CHOOSE YOUR STYLE</button>
+
+   </a>
+      </div>
+      <div class="newSeasonItem">
+        <img src="" class="newSeasonImg"/>
+      </div>
     </div>
 
     <script src="app.js"></script>
