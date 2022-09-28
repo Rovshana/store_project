@@ -366,3 +366,60 @@ label{
     padding: 15px;
     font-weight: 600;
 }
+
+footer{
+    display: flex;
+}
+
+.footerLeft{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+.fmenuTitle{
+    font-size: 16px;
+
+}
+
+.fMenuList{
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+
+}
+.fMenuListItem{
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+
+}
+.footerRight{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.fInput{
+    padding: 5px;
+}
+.fBtn{
+    background-color: #111;
+    color: white;
+    padding: 5px;
+}
+.footerIcons{
+    display: flex;
+}
+.ficon{
+width: 20px;
+right: 20px;
+margin-right: 10px;
+}
+.copy{
+    font-weight: 300;
+    font-size: 14px;
+}
