@@ -99,7 +99,6 @@ list.forEach((item, index)=>{
 // changing product color by clicking color of product
 productColors.forEach((item, index)=>{
     item.addEventListener('click', ()=>{
-        console.log('u clicked')
         currentProductImg.src = choosenProduct.colors[index].img
         console.log(currentProductImg)
     })
